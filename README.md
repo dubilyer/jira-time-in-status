@@ -7,11 +7,13 @@ Uses changelogs, handles multiple transitions in/out of a status, and outputs a 
 
 ## ✨ Features
 
+* ⚠️ This script was developed and tested on **Jira Cloud**. It has **not been tested on Jira Data Center**, though a REST-based approach is included.
 * Works with **Jira Cloud (HAPI)** and **Jira Data Center (REST)**.
 * Calculates **total time in a status**, not just last entry.
 * Handles multiple entries/exits into the same status.
 * Generates **aligned Markdown tables** for easy reporting.
 * Configurable with JQL and target status.
+* ⚠️ If you have too many results, execution can take a long time and might be stopped by ScriptRunner limitations. Consider splitting your JQL into smaller chunks.
 
 ---
 
@@ -54,7 +56,7 @@ Uses changelogs, handles multiple transitions in/out of a status, and outputs a 
 
 ## 🛠 Requirements
 
-* Jira Cloud or Jira Data Center
+* Jira Cloud
 * [ScriptRunner](https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira) installed
 * Groovy runtime (provided by ScriptRunner)
 
